@@ -1,0 +1,12 @@
+///pseudo code 2: Computing occurances
+
+1: Occurance <- 0
+2: for column = 1 to x STEP 1 do
+    3: for row = 1 to s STEP 1 do
+        4: if DataSet[column][row] =!nil then
+            5: Occurance <- Occurance + 1
+            6: else
+            7: pass
+        8: end if
+    9: end for
+10:end for

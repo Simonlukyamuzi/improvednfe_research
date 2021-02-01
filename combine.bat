@@ -1,0 +1,1 @@
+for /D . %%f in (*.jason) DO (set "var=%%g" mongoimport --db features --combine features --file "%%g")

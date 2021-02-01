@@ -1,0 +1,39 @@
+///pseudo code 1 : Cleaning Data
+
+Require: RawData// unprocessed data
+Ensure:CleanData// processed data
+PROCEDURE processing data
+1:xrows <- (RawData)
+2:xfeatures <- length(RawData)
+3:xrows2 <- 0
+4:xfeatures <- length(RawData)
+//start logic
+5:if nrows=0  then
+    6:return NULL
+    7:else
+        8: for row=1 to nrows STEP 1 do
+            9: if RawData[row] xrows2 <- size (RawData)
+                10:drop RawData[row]
+                11:xrows2 <- size(RawData)
+            12: end if
+        13:end for
+        14:for col = 1 to xfeatures STEP 1 do
+            15:if RawData[col]=0 then
+                16:drop RawData[col]
+                17:xfeature2 <- length(RawData)
+            18:end if
+        19:end for
+    20:for row =1 to nrows2 STEP 1 do
+        21:for col = 1 to xfeatures2 STEP 1 do
+            22:if RawData [row][col] = nil then
+                23:pass
+                24:else
+                25:  w <- RawData[row][col].split("")// Counting evidences per feature and per sample
+                26: Enum <- length(w)
+                27:  CleanData[row][col] <- Enum
+            28:  end if
+         29:  end for
+    30:  end for
+31:  end if
+// end logic
+   RETURN CleanData
